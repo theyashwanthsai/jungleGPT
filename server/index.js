@@ -16,7 +16,7 @@ app.post('/chat', async(req, res) => {
     let prompt = "Based on the description given, can you please predict which animal is being talked about. Provide a proper description as well: " + JSON.stringify(content);
     const configuration = new Configuration({
     // apiKey: process.env.OPENAI_API_KEY,
-    apiKey: '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',
+    apiKey: '',
     });
     const openai = new OpenAIApi(configuration);
 
