@@ -1,3 +1,4 @@
 # ChatGPT-Web-Clone
-Interface similar to chatgpt
-![Screenshot 2023-07-18 at 10 13 40 PM](https://github.com/theyashwanthsai/ChatGPT-Web-Clone/assets/68785131/b58774e1-799b-4c3c-9eea-78abb66a17cf)
+Pokedex for real life animals!
+
+![Screenshot 2023-07-20 at 12 25 06 PM](https://github.com/theyashwanthsai/jungleGPT/assets/68785131/75086499-516f-44bf-bced-584d2f0008af)
