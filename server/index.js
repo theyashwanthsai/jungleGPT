@@ -1,7 +1,10 @@
 const express = require('express')
 const bodyParser = require('body-parser')
+require('dotenv').config();
+
 const cors = require('cors');
 const app = express()
+
 const port = 3000
 const { Configuration, OpenAIApi } = require("openai");
 app.use(bodyParser.json());
@@ -16,7 +19,7 @@ app.post('/chat', async(req, res) => {
     let prompt = "Based on the description given, can you please predict which animal is being talked about. Provide a proper description as well: " + JSON.stringify(content);
     const configuration = new Configuration({
     // apiKey: process.env.OPENAI_API_KEY,
-    apiKey: '',
+    apiKey: process.env.OPENAI_API_KEY,
     });
     const openai = new OpenAIApi(configuration);
 
@@ -36,7 +39,7 @@ app.post('/image', async (req, res) => {
   try{
     
     const configuration = new Configuration({
-      apiKey: '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',
+      apiKey: process.env.OPENAI_API_KEY,
     });
     const openai = new OpenAIApi(configuration);
     const response = await openai.createImage({
